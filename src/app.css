@@ -1,0 +1,1131 @@
+:root {
+  --bgcolor: #02021a;
+  --bordercolor: #00c6cd;
+  --menuslde: #23fff46b;
+  --ashcolor: #B2BEB5;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bgcolor);
+  color: white;
+  font-family: 'Overpass', sans-serif;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 5rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2rem;
+}
+
+.navbar .navbar-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1500px;
+}
+
+.navbar .navbar-container .nav-logo {
+  color: #fff;
+  justify-self: start;
+  margin: .5rem 0 0 2rem;
+  padding: .2rem 1rem;
+  cursor: none;
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  border: 0.2rem solid var(--ashcolor);
+}
+
+.navbar .navbar-container .nav-logo span {
+  color: var(--bordercolor);
+  font-size: 2rem;
+}
+
+.navbar .navbar-container .nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  text-align: center;
+  width: 60vw;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-right: 2rem;
+}
+
+.navbar .navbar-container .nav-links {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem 0.3rem;
+  height: 100%;
+}
+
+.navbar .navbar-container .nav-links:hover {
+  border-bottom: 0.2rem solid var(--bordercolor);
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.navbar .navbar-container .menu-icon {
+  display: none;
+  color: #fff;
+}
+
+.navbar .navbar-container .nav-links-mobile {
+  display: none;
+}
+
+.landing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem 8rem 5rem 7rem;
+}
+
+.landing .texts {
+  line-height: 1.5;
+}
+
+.landing .texts .small-text {
+  padding: 6rem 0 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--ashcolor);
+  font-family: 'Open Sans', sans-serif;
+}
+
+.landing .texts .bigtext {
+  font-size: 3rem;
+  font-family: 'Lato', sans-serif;
+  color: var(--bordercolor);
+  padding-top: .5rem;
+  padding-bottom: 2rem;
+}
+
+.landing .texts .bigtext span {
+  color: white;
+}
+
+.landing .texts .btnclip {
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3rem;
+}
+
+.landing .texts .btnclip a {
+  margin-right: 1rem;
+  text-decoration: none;
+  padding: 1rem 2.1rem;
+  background: white;
+  border-radius: 1.4rem;
+  color: var(--bordercolor);
+}
+
+.landing .texts .btnclip .litbtn:hover {
+  -webkit-animation: pusalte .8s ease-in-out;
+          animation: pusalte .8s ease-in-out;
+  color: var(--bordercolor);
+  border: 0.2rem solid var(--bordercolor);
+  color: #02021a;
+}
+
+.landing .texts .btnclip .darkbtn {
+  background: var(--bordercolor);
+  color: white;
+}
+
+.landing .texts .btnclip .darkbtn:hover {
+  -webkit-animation: pusalte .8s ease-in-out;
+          animation: pusalte .8s ease-in-out;
+  color: #02021a;
+  border: .2rem solid white;
+}
+
+.landing .texts .btnclip .fa-brands {
+  padding: 0 1rem;
+}
+
+.landing .profileimg {
+  display: block;
+  position: relative;
+  margin: 0 5rem 0;
+  padding-top: 5rem;
+}
+
+.landing .profileimg img {
+  height: 12rem;
+  width: 12rem;
+  -o-object-position: top;
+     object-position: top;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 0.3rem solid var(--bordercolor);
+}
+
+.landing .profileimg::before {
+  content: "";
+  width: 12rem;
+  height: 12rem;
+  position: absolute;
+  background: rgba(0, 0, 255, 0.144);
+  border-radius: 50%;
+}
+
+.empty {
+  margin: 8rem 40rem 2rem;
+}
+
+.empty hr {
+  color: var(--ashcolor);
+  -webkit-box-shadow: 1rem 1rem var(--bordercolor);
+          box-shadow: 1rem 1rem var(--bordercolor);
+}
+
+.short {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 6rem 8rem 2rem 7rem;
+}
+
+.short .header {
+  margin-top: 1rem;
+}
+
+.short .header img {
+  height: 12rem;
+  width: 12rem;
+  -o-object-position: top right;
+     object-position: top right;
+  border-radius: 2rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 0.1rem solid var(--bordercolor);
+}
+
+.short .header::before {
+  content: "";
+  width: 12rem;
+  height: 12rem;
+  position: absolute;
+  background: rgba(0, 0, 255, 0.144);
+  border-radius: 2rem;
+  margin-top: 1rem;
+}
+
+.short .word {
+  padding-left: 3rem;
+}
+
+.short .word .names {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.short .word .hint {
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.short .word .hit {
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+  padding-right: 15rem;
+  color: var(--bordercolor);
+}
+
+.mentor {
+  margin: 2rem 8rem 5rem 7rem;
+}
+
+.mentor .meet {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.mentor .them {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mentor .bigbro img {
+  height: 11rem;
+  width: 10rem;
+  -o-object-position: top right;
+     object-position: top right;
+  border-radius: .4rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-right: 0.2rem solid var(--bordercolor);
+}
+
+.mentor .bigbro .thrword {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mentor .bigbro .thrword h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px var(--bordercolor);
+}
+
+.mentor .bigbro .thrword p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+.mentor .bigbro .thrword .wrk2 {
+  padding-right: 8rem;
+}
+
+.mentor .bigbro .likw {
+  margin-top: 3rem;
+}
+
+.mentor .bigbro .likw a {
+  font-family: 'Lato', sans-serif;
+  color: var(--ashcolor);
+  text-decoration: none;
+  border: 0.1rem solid var(--ashcolor);
+  padding: 1rem 2rem;
+}
+
+.mentor .bigbro .likw a:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #00c6cd;
+  border: 0.14rem solid var(--bordercolor);
+  cursor: pointer;
+}
+
+.mentor .bigbro2 {
+  margin-left: 20rem;
+}
+
+.mentor .bigbro2 img {
+  height: 11rem;
+  width: 10rem;
+  -o-object-position: top right;
+     object-position: top right;
+  border-radius: .4rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-right: 0.2rem solid var(--bordercolor);
+}
+
+.mentor .bigbro2 .thrword {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mentor .bigbro2 .thrword h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px var(--bordercolor);
+}
+
+.mentor .bigbro2 .thrword p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.mentor .bigbro2 .thrword .wrk2 {
+  padding-right: 8rem;
+}
+
+.mentor .bigbro2 .likw {
+  margin-top: 3rem;
+}
+
+.mentor .bigbro2 .likw a {
+  font-family: 'Lato', sans-serif;
+  color: var(--ashcolor);
+  text-decoration: none;
+  border: 0.1rem solid var(--ashcolor);
+  padding: 1rem 2rem;
+}
+
+.mentor .bigbro2 .likw a:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #00c6cd;
+  border: 0.14rem solid var(--bordercolor);
+  cursor: pointer;
+}
+
+footer {
+  background: var(--bordercolor);
+  padding: 2rem;
+  margin-top: 7rem;
+}
+
+footer .foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .foot a {
+  text-decoration: none;
+  color: var(--bgcolor);
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+}
+
+footer .foot a:hover {
+  text-decoration: underline;
+}
+
+@-webkit-keyframes pusalte {
+  5% {
+    -webkit-box-shadow: 0 0 2rem #5ddcff, 0 0 3rem #11088f;
+            box-shadow: 0 0 2rem #5ddcff, 0 0 3rem #11088f;
+  }
+}
+
+@keyframes pusalte {
+  5% {
+    -webkit-box-shadow: 0 0 2rem #5ddcff, 0 0 3rem #11088f;
+            box-shadow: 0 0 2rem #5ddcff, 0 0 3rem #11088f;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .NavbarItems {
+    position: relative;
+  }
+  .navbar-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .nav-menu {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    width: 100% !important;
+    height: 60vh !important;
+    position: absolute !important;
+    top: 70px !important;
+    left: -100% !important;
+    opacity: 1;
+    -webkit-transition: all 0.5s ease !important;
+    transition: all 0.5s ease !important;
+    -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
+    text-align: center !important;
+    margin-left: 0 !important;
+  }
+  .nav-menu.active {
+    background: var(--menuslde);
+    left: 0 !important;
+    opacity: 2;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    z-index: 1 !important;
+  }
+  .nav-links {
+    text-align: center !important;
+    margin: 0  !important;
+    padding: 1rem !important;
+    width: 80% !important;
+    height: 70% !important;
+    display: table !important;
+  }
+  .nav-links:hover {
+    text-align: center !important;
+    background-color: transparent !important;
+    color: #fff !important;
+    border-radius: 0;
+    border: 0.1rem solid var(--ashcolor) !important;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  .nav-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: translate(25%, 50%);
+            transform: translate(25%, 50%);
+  }
+  .menu-icon {
+    display: block !important;
+    opacity: 100%;
+    position: absolute;
+    top: 1.5rem;
+    right: 0;
+    -webkit-transform: translate(-100%, 60%);
+            transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: white;
+  }
+  .fa-times {
+    color: var(--bordercolor);
+    font-size: 2rem;
+  }
+  .nav-links-mobile {
+    display: block !important;
+    text-align: center;
+    margin: 0 !important;
+    border-radius: 4px;
+    width: 80%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: #fff;
+    padding: 14px 20px;
+    border: 1px solid #fff;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  .nav-links-mobile:hover {
+    background: #fff;
+    color: #242424;
+    -webkit-transition: 250ms;
+    transition: 250ms;
+  }
+  .landing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 2rem 8rem 5rem 7rem;
+  }
+  .landing .texts {
+    line-height: 1.5;
+  }
+  .landing .texts .small-text {
+    padding: 6rem 0 0;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--ashcolor);
+    font-family: 'Open Sans', sans-serif;
+  }
+  .landing .texts .bigtext {
+    font-size: 3rem;
+    font-family: 'Lato', sans-serif;
+    color: var(--bordercolor);
+    padding-top: .5rem;
+    padding-bottom: 2rem;
+  }
+  .landing .texts .bigtext span {
+    color: white;
+  }
+  .landing .texts .btnclip {
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+  }
+  .landing .texts .btnclip a {
+    margin-right: 1rem;
+    text-decoration: none;
+    padding: 1rem 2.1rem;
+    background: white;
+    border-radius: 1.4rem;
+    color: var(--bordercolor);
+  }
+  .landing .texts .btnclip .litbtn:hover {
+    -webkit-animation: pusalte .8s ease-in-out;
+            animation: pusalte .8s ease-in-out;
+    color: var(--bordercolor);
+    border: 0.2rem solid var(--bordercolor);
+    color: #02021a;
+  }
+  .landing .texts .btnclip .darkbtn {
+    background: var(--bordercolor);
+    color: white;
+  }
+  .landing .texts .btnclip .darkbtn:hover {
+    -webkit-animation: pusalte .8s ease-in-out;
+            animation: pusalte .8s ease-in-out;
+    color: #02021a;
+    border: .2rem solid white;
+  }
+  .landing .texts .btnclip .fa-brands {
+    padding: 0 1rem;
+  }
+  .landing .profileimg {
+    display: block;
+    position: relative;
+    margin: 0 5rem 0;
+    padding-top: 5rem;
+  }
+  .landing .profileimg img {
+    height: 12rem;
+    width: 12rem;
+    -o-object-position: top;
+       object-position: top;
+    border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border: 0.3rem solid var(--bordercolor);
+  }
+  .landing .profileimg::before {
+    content: "";
+    width: 12rem;
+    height: 12rem;
+    position: absolute;
+    background: rgba(0, 0, 255, 0.144);
+    border-radius: 50%;
+  }
+  .empty {
+    margin: 8rem 20rem 2rem;
+  }
+  .empty hr {
+    color: var(--ashcolor);
+    -webkit-box-shadow: 1rem 1rem var(--bordercolor);
+            box-shadow: 1rem 1rem var(--bordercolor);
+  }
+  .short {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .short .header {
+    margin: 1rem 6rem 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .short .header img {
+    height: 12rem;
+    width: 12rem;
+    -o-object-position: top right;
+       object-position: top right;
+    border-radius: 2rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border: 0.1rem solid var(--bordercolor);
+  }
+  .short .header::before {
+    content: "";
+    width: 12rem;
+    height: 12rem;
+    position: absolute;
+    background: rgba(0, 0, 255, 0.144);
+    border-radius: 2rem;
+    margin: 1rem 6rem 0;
+  }
+  .short .word {
+    margin: 0 2rem;
+    text-align: center;
+  }
+  .short .word .names {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+  }
+  .short .word .hint {
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .short .word .hit {
+    padding: 1rem 0 0;
+    margin: 0;
+    text-align: none;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--bordercolor);
+  }
+  .mentor {
+    margin: 2rem 8rem 5rem 7rem;
+  }
+  .mentor .meet {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+  }
+  .mentor .them {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .mentor .bigbro img {
+    height: 11rem;
+    width: 10rem;
+    -o-object-position: top right;
+       object-position: top right;
+    border-radius: .4rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-right: 0.2rem solid var(--bordercolor);
+  }
+  .mentor .bigbro .thrword {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mentor .bigbro .thrword h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px var(--bordercolor);
+  }
+  .mentor .bigbro .thrword p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+  }
+  .mentor .bigbro .thrword .wrk2 {
+    padding-right: 8rem;
+  }
+  .mentor .bigbro .likw {
+    margin-top: 3rem;
+  }
+  .mentor .bigbro .likw a {
+    font-family: 'Lato', sans-serif;
+    color: var(--ashcolor);
+    text-decoration: none;
+    border: 0.1rem solid var(--ashcolor);
+    padding: 1rem 2rem;
+  }
+  .mentor .bigbro .likw a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #00c6cd;
+    border: 0.14rem solid var(--bordercolor);
+    cursor: pointer;
+  }
+  .mentor .bigbro2 {
+    margin: 5rem 0 0 0;
+  }
+  .mentor .bigbro2 img {
+    height: 11rem;
+    width: 10rem;
+    -o-object-position: top right;
+       object-position: top right;
+    border-radius: .4rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-right: 0.2rem solid var(--bordercolor);
+  }
+  .mentor .bigbro2 .thrword {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mentor .bigbro2 .thrword h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px var(--bordercolor);
+  }
+  .mentor .bigbro2 .thrword p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+  .mentor .bigbro2 .thrword .wrk2 {
+    padding-right: 8rem;
+  }
+  .mentor .bigbro2 .likw {
+    margin-top: 3rem;
+  }
+  .mentor .bigbro2 .likw a {
+    font-family: 'Lato', sans-serif;
+    color: var(--ashcolor);
+    text-decoration: none;
+    border: 0.1rem solid var(--ashcolor);
+    padding: 1rem 2rem;
+  }
+  .mentor .bigbro2 .likw a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #00c6cd;
+    border: 0.14rem solid var(--bordercolor);
+    cursor: pointer;
+  }
+  footer {
+    background: var(--bordercolor);
+    padding: 2rem;
+    margin-top: 4rem;
+  }
+  footer .foot {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .foot a {
+    text-decoration: none;
+    color: var(--bgcolor);
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+  }
+  footer .foot a:hover {
+    text-decoration: underline;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .landing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin: 2rem;
+  }
+  .landing .texts {
+    line-height: 1.2;
+    text-align: left;
+  }
+  .landing .texts .small-text {
+    padding: 2rem 0 0;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--ashcolor);
+    font-family: 'Open Sans', sans-serif;
+  }
+  .landing .texts .bigtext {
+    font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+    color: var(--bordercolor);
+  }
+  .landing .texts .bigtext span {
+    color: white;
+  }
+  .landing .texts .btnclip {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+  }
+  .landing .texts .btnclip a {
+    text-decoration: none;
+    background: white;
+    border-radius: 1.4rem;
+    color: var(--bordercolor);
+    margin-right: 8rem;
+    text-align: center;
+  }
+  .landing .texts .btnclip .litbtn:hover {
+    -webkit-animation: pusalte .8s ease-in-out;
+            animation: pusalte .8s ease-in-out;
+    color: var(--bordercolor);
+    border: 0.2rem solid var(--bordercolor);
+    color: #02021a;
+  }
+  .landing .texts .btnclip .darkbtn {
+    background: var(--bordercolor);
+    color: white;
+    margin-top: 2rem;
+  }
+  .landing .texts .btnclip .darkbtn:hover {
+    -webkit-animation: pusalte .8s ease-in-out;
+            animation: pusalte .8s ease-in-out;
+    color: #02021a;
+    border: .2rem solid white;
+  }
+  .landing .texts .btnclip .fa-brands {
+    padding: .5rem;
+  }
+  .landing .profileimg {
+    display: block;
+    position: relative;
+    padding-top: 5rem;
+  }
+  .landing .profileimg img {
+    height: 12rem;
+    width: 12rem;
+    -o-object-position: top;
+       object-position: top;
+    border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border: 0.3rem solid var(--bordercolor);
+  }
+  .landing .profileimg::before {
+    content: "";
+    width: 12rem;
+    height: 12rem;
+    position: absolute;
+    background: rgba(0, 0, 255, 0.144);
+    border-radius: 50%;
+  }
+  .empty {
+    margin: 8rem 10rem 2rem;
+  }
+  .empty hr {
+    color: var(--ashcolor);
+    -webkit-box-shadow: 1rem 1rem var(--bordercolor);
+            box-shadow: 1rem 1rem var(--bordercolor);
+  }
+  .short {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .short .header {
+    margin: 1rem 0 0;
+  }
+  .short .header img {
+    height: 12rem;
+    width: 12rem;
+    -o-object-position: top right;
+       object-position: top right;
+    border-radius: 2rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border: 0.1rem solid var(--bordercolor);
+  }
+  .short .header::before {
+    content: "";
+    width: 12rem;
+    height: 12rem;
+    position: absolute;
+    background: rgba(0, 0, 255, 0.144);
+    border-radius: 2rem;
+    margin: 1rem 0 0;
+  }
+  .short .word {
+    margin: 0 2rem;
+    text-align: left;
+  }
+  .short .word .names {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+  }
+  .short .word .hint {
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .short .word .hit {
+    padding: .5rem 0 0;
+    margin: 0;
+    text-align: none;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--bordercolor);
+  }
+  .mentor {
+    margin: 0;
+    padding-left: 2rem;
+  }
+  .mentor .meet {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    padding-left: 2rem;
+  }
+  .mentor .them {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .mentor .bigbro img {
+    height: 11rem;
+    width: 10rem;
+    -o-object-position: top right;
+       object-position: top right;
+    border-radius: .4rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-right: 0.2rem solid var(--bordercolor);
+  }
+  .mentor .bigbro .thrword {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mentor .bigbro .thrword h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px var(--bordercolor);
+  }
+  .mentor .bigbro .thrword p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+  }
+  .mentor .bigbro .thrword .wrk2 {
+    padding-right: 8rem;
+  }
+  .mentor .bigbro .likw {
+    margin-top: 3rem;
+  }
+  .mentor .bigbro .likw a {
+    font-family: 'Lato', sans-serif;
+    color: var(--ashcolor);
+    text-decoration: none;
+    border: 0.1rem solid var(--ashcolor);
+    padding: 1rem 2rem;
+  }
+  .mentor .bigbro .likw a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #00c6cd;
+    border: 0.14rem solid var(--bordercolor);
+    cursor: pointer;
+  }
+  .mentor .bigbro2 {
+    margin: 5rem 0 0 0;
+  }
+  .mentor .bigbro2 img {
+    height: 11rem;
+    width: 10rem;
+    -o-object-position: top right;
+       object-position: top right;
+    border-radius: .4rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-right: 0.2rem solid var(--bordercolor);
+  }
+  .mentor .bigbro2 .thrword {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mentor .bigbro2 .thrword h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px var(--bordercolor);
+  }
+  .mentor .bigbro2 .thrword p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+  .mentor .bigbro2 .thrword .wrk2 {
+    padding-right: 8rem;
+  }
+  .mentor .bigbro2 .likw {
+    margin-top: 3rem;
+  }
+  .mentor .bigbro2 .likw a {
+    font-family: 'Lato', sans-serif;
+    color: var(--ashcolor);
+    text-decoration: none;
+    border: 0.1rem solid var(--ashcolor);
+    padding: 1rem 2rem;
+  }
+  .mentor .bigbro2 .likw a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #00c6cd;
+    border: 0.14rem solid var(--bordercolor);
+    cursor: pointer;
+  }
+}
+/*# sourceMappingURL=app.css.map */
